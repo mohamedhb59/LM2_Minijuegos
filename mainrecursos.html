@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eco Empire</title>
+        <link rel="stylesheet" href="estilorecursos.css">
+        <script src="controladorrecursos.js"></script>
+</head>
+
+<body onload="inicializarRecursos()">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+        <img class="lluvia" src="lluvadorade.png">
+
+        <div class="cabecera">
+                <img class="espada2" src="espadascruzadas.png">
+                <div class="titulo" id="titulo" onload="cambiarColorAutomaticamente()"><b>Eco Empire</b></div>
+                <img class="espada1" src="espadascruzadas.png">
+        </div>
+        <div class="div_general">
+                <img class="foton" src="foton.jpg">
+                <div class="recurso">
+                        <img class="foto_recurso" src="carne.webp">
+                        <p class="cantidad_recurso" id="cantidad_alimento">0</p>
+                        <p class="aumento" id="aumento_alimento"></p>
+                </div>
+                <div class="recurso">
+                        <img class="foto_recurso" src="madera.avif">
+                        <p class="cantidad_recurso" id="cantidad_madera">0</p>
+                        <p class="aumento" id="aumento_madera"></p>
+                </div>
+                <div class="recurso">
+                        <img class="foto_recurso" src="piedra.avif">
+                        <p class="cantidad_recurso" id="cantidad_piedra">0</p>
+                        <p class="aumento" id="aumento_piedra"></p>
+                </div>
+                <div class="recurso">
+                        <img class="foto_recurso" src="oro.jpg">
+                        <p class="cantidad_recurso" id="cantidad_oro">0</p>
+                        <p class="aumento" id="aumento_oro"></p>
+                </div>
+        </div>
+
+        <!--Edificios-->
+        <div class="edificio_general">
+                <div class="edificio" onclick="incrementoMaderero()">
+                        <div class="edificio_2" style="float:left">
+                                <img class="imagen_edificio" src="campamento_maderero.jpg">
+                                <p class="letra_edificio" style="margin: 0;padding: 0;">MADERERO</p>
+                                <p class="letra_edificio" style="margin: 0;padding: 0;">100 madera</p>
+                                <p class="letra_edificio" style="margin: 0;padding: 0;">50 piedra</p>
+                                <p class="letra_edificio" style="margin: 0;padding: 0;">1 madera/s</p>
+                        </div>
+                        <div class="contenedor_cantidad_edificio">
+                                <p class="cantidad_edificio" id="maderero">0</p>
+                        </div>
+                </div>
+                <div class="edificio" onclick="incrementoGranja()">
+                        <div class="edificio_2" style="float:left">
+                                <img class="imagen_edificio" src="granja.jpg">
+                                <p class="letra_edificio" style="margin: 0;padding:0;">GRANJA</p>
+                                <p class="letra_edificio" style="margin: 0;padding: 0;">100 alimento</p>
+                                <p class="letra_edificio" style="margin: 0;padding: 0;">50 madera</p>
+                                <p class="letra_edificio" style="margin: 0;padding: 0;">1 alimento/s</p>
+                        </div>
+                        <div class="contenedor_cantidad_edificio">
+                                <p class="cantidad_edificio" id="granja">0</p>
+                        </div>
+                </div>
+                <div class="edificio" onclick="incrementoMina()">
+                        <div class="edificio_2" style="float:left">
+                                <img class="imagen_edificio" src="mina.avif">
+                                <p class="letra_edificio" style="margin: 0;padding:0;">MINA</p>
+                                <p class="letra_edificio" style="margin: 0;padding: 0;">100 piedra</p>
+                                <p class="letra_edificio" style="margin: 0;padding: 0;">50 madera</p>
+                                <p class="letra_edificio" style="margin: 0;padding: 0;">1 piedra/s</p>
+                        </div>
+                        <div class="contenedor_cantidad_edificio">
+                                <p class="cantidad_edificio" id="mina">0</p>
+                        </div>
+                </div>
+                <div class="edificio" onclick="incrementoCantera()">
+                        <div class="edificio_2" style="float:left">
+                                <img class="imagen_edificio" src="cantera.webp">
+                                <p class="letra_edificio" style="margin: 0;padding:0;">CANTERA</p>
+                                <p class="letra_edificio" style="margin: 0;padding: 0;">100 oro</p>
+                                <p class="letra_edificio" style="margin: 0;padding: 0;">100 alimento</p>
+                                <p class="letra_edificio" style="margin: 0;padding: 0;">100 madera</p>
+                                <p class="letra_edificio" style="margin: 0;padding: 0;">1 oro/s</p>
+                        </div>
+                        <div class="contenedor_cantidad_edificio">
+                                <p class="cantidad_edificio_cantera" id="cantera">0</p>
+                        </div>
+                </div>
+                <img class="frasegod" src="fraseedadmedia.jpg">
+        </div>
+
+</body>
+
+</html>
