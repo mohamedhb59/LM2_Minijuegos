@@ -1,0 +1,78 @@
+body{
+    background-color:#6495ed;
+}
+
+.descripcion{
+    background-color:#95F58F;
+    border: solid black 3px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.letra_descripcion{
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-left: 70px;
+}
+
+.cajajuegos{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+.cabecera{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 75px;
+    border: none;
+}
+
+.fotillo1{
+    border: solid black 5px;
+    border-radius: 120px;
+    height: 250px;
+    width: 250px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.buscaminas{
+    border: solid black 3px;
+    margin-top: 10px;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    background-color:#95F58F ;
+}
+
+.JugarYa{
+    justify-content: center;
+    align-items: center;
+    margin-left: 118px;
+}
+
+.letra{
+    margin-left: 10px;
+}
+
+.sheldon{
+    border: solid black 3px;
+    margin-top: 10px;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    background-color:#95F58F ;
+}
+
+.SimonDice{
+    border: solid black 3px;
+    margin-top: 10px;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    background-color:#95F58F ;
+}

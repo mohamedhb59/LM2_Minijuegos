@@ -1,0 +1,27 @@
+body{
+    background-color: #a52a2a;
+}
+
+.general{
+    border: solid black 3px;
+    height: 450px;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 680px;
+    margin-top: 200px;
+    background-color: #6898E3 ;
+}
+
+.foto{
+    height: 200px;
+    width: 150px;
+    margin-left: 110px;
+    margin-top: 50px;
+    border: solid black 3px;
+}
+
+.letra{
+    margin-top: 50px;
+    margin-left: 50px;
+}
